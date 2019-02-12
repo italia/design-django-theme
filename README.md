@@ -1,0 +1,188 @@
+AGID Bootstrap Italia template for Django
+-----------------------------------------
+
+Completamente open-source, costruita sulle fondamenta di [Bootstrap 4.2.1](https://getbootstrap.com/),
+di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità,
+personalizzandole secondo le [Linee Guida di Design per i siti web della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/),
+**Bootstrap Italia** usa i pattern e i componenti definiti nello [UI Kit](https://designers.italia.it/kit/ui-kit/)
+di Designers Italia e li trasforma in codice già pronto all'uso!
+
+https://italia.github.io/bootstrap-italia/
+
+Il tema Bootstrap Italia è lo strumento Bootstrap 4 per lo sviluppo di
+applicazioni web per la PA sviluppato da AGID (Agenzia per l'Italia Digitale).
+
+https://italia.github.io/bootstrap-italia/
+
+Questa libreria per il framework Python Django fornisce lo schema di default
+del template, opportunamente diviso in blocchi di cui poter fare l'overload,
+al fine di dotare il proprio progetto di una interfaccia grafica che rispetti
+le linee guida dettate dall'AGID.
+
+[QUI](https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/)
+è possibile prendere visione del codice sorgente per l'implementazione di tutti
+i componenti grafici messi a disposizione.
+
+Installazione
+-------------
+
+```
+pip install django-bootstrap-italia
+```
+- In settings.py INSTALLED_APPS inserire *agid_template*.
+
+
+Utilizzo
+--------
+
+```
+python manage.py collectstatic
+```
+
+- Nel template del progetto, creare un file ```base.html``` (scegliere il nome
+preferito) ed eseguire l'*extends* del file ```boostrap-italia-base.html```. Questa
+sarà la base grafica (il file è concepito quasi come un file di configurazione),
+comune a tutte (o quasi) le pagine del sistema;
+- In ```base.html``` eseguire l'overload dei blocchi, al fine di personalizzare
+le sezioni di interesse (es. il nome dell'Ente/Organizzazione, il logo, ecc...);
+- Ogni pagina del proprio progetto dovrà estendere ```base.html``` ed effettuare
+l'overload del blocco ```{% container %}```, ereditando, cosi, le impostazioni
+di ```<header>``` e  ```<footer>``` opportunamente personalizzate.
+
+
+Stile e CSS/SCSS
+----------------
+
+Per la personalizzazione dello stile del template (colori, dimensioni, sfondi),
+si consiglia l'utilizzo di SASS 3 (Syntactically Awesome Style Sheets), in modo
+da essere in grado di agire in ambito responsive.
+
+Può essere utile [django-sass-processor](https://pypi.org/project/django-sass-processor).
+
+Una volta installate le librerie, sarà possibile integrare fogli di stile *.scss*
+e importarli nelle proprie pagine effettuando l'overload del blocco ```{% extra_head %}```.
+
+
+Descrizione dei blocchi
+-----------------------
+
+I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-base.html```.
+
+| Block                                 | Descrizione           |
+| --------------------------------------|---------------------|
+| **{% block page_title %}**            | Tag <title> della pagina   |
+| **{% block page_meta_description %}**            | tag <meta-description> della pagina   |
+| **{% block extra_head %}** | Extra CSS o Javascript   |
+| **{% block header_slim_wrapper %}** | Striscia top in Header   |
+| **{% block header_slim_org_name %}** | Nome organizzazione in Header top   |
+| **{% block header_slim_mobile_org_name %}** | Nome organizzazione in Header top (mobile)   |
+| **{% block header_mobile_arrow %}** | Icona freccia sub-menu in Header top (mobile)   |
+| **{% block header_mobile_slim_menu %}** | Sub-menu nome organizzazione (mobile)   |
+| **{% block header_slim_right_zone %}** | Area di destra in Header top   |
+| **{% block header_slim_sub_menu %}** | Sub-menu area di destra in Header top   |
+| **{% block header_slim_buttons %}** | Button area di destra in Header top   |
+| **{% block header_center_logo %}** | Header logo principale  |
+| **{% block header_center_org_name %}** | Nome organizzazione principale in Header   |
+| **{% block header_center_org_subname %}** | Descrizione organizzazione in Header   |
+| **{% block header_center_right_zone %}** | Area di destra sezione principale Header  |
+| **{% block header_center_social %}** | Area icone social in sezione principale Header   |
+| **{% block header_center_search %}** | Area "Cerca" in sezione principale Header   |
+| **{% block header_center_search_text %}** | Area di testo in "Cerca"  |
+| **{% block header_center_search_word %}** | Testo "Cerca"   |
+| **{% block header_center_search_icon %}** | Icona tasto "Cerca"   |
+| **{% block main_menu %}** | Menu principale in Header  |
+| **{% block container %}** | Contenuto della pagina   |
+| **{% block footer %}** | Area footer   |
+| **{% block footer_top_section %}** | Striscia top in Footer   |
+| **{% block footer_logo %}** | Logo Footer  |
+| **{% block footer_org_text %}** | Area nome organizzazione in Footer   |
+| **{% block footer_org_name %}** | Nome organizzazione in Footer   |
+| **{% block footer_org_subname %}** | Descrizione organizzazione in Footer   |
+| **{% block footer_menu_section %}** | Sezione menu centrali in Footer   |
+| **{% block first_column %}** | Prima colonna in sezione centrale in Footer   |
+| **{% block second_column %}** | Seconda colonna in sezione centrale in Footer   |
+| **{% block third_column %}** | Terza colonna in sezione centrale in Footer   |
+| **{% block fourth_column %}** | Quarta colonna in sezione centrale in Footer   |
+| **{% block footer_contacts_section %}** | Sezione contatti in Footer   |
+| **{% block footer_bottom %}** | Striscia bottom in Footer   |
+| **{% block footer_bottom_content %}** | Contenuto striscia bottom in Footer   |
+| **{% block bottom_scripts %}** | Extra javascript a fine pagina   |
+
+
+Esempio di base.html
+--------------------
+
+```
+<!-- Extends default Bootstrap Italia template -->
+{% extends 'bootstrap-italia-base.html' %}
+
+<!-- From app django-sass-processor -->
+{% load sass_tags %}
+
+{% load static %}
+
+<!-- Page Title -->
+{% block page_title %}
+Università della Calabria
+{% endblock page_title %}
+
+<!-- My custom scss sheet -->
+{% block extra_head %}
+<link rel="stylesheet" href="{% sass_src 'css/unical-style.scss' %}" type="text/css" />
+{% endblock extra_head %}
+
+<!-- URL link top left -->
+{% block header_slim_org_url %}
+https://www.unical.it
+{% endblock header_slim_org_url %}
+
+<!-- Name top left -->
+{% block header_slim_org_name %}
+Università della Calabria
+{% endblock header_slim_org_name %}
+
+<!-- Mobile slim_org_name -->
+{% block header_slim_mobile_org_name %}
+Università della Calabria
+{% endblock header_slim_mobile_org_name %}
+
+<!-- Make empty areas -->
+{% block header_mobile_arrow %}{% endblock header_mobile_arrow %}
+{% block header_mobile_slim_menu %}{% endblock header_mobile_slim_menu %}
+
+<!-- Logo in Header -->
+{% block header_center_logo %}
+<img class="icon" src="{% static 'images/logo.png' %}" />
+{% endblock header_center_logo %}
+
+<!-- Organization name in Header -->
+{% block header_center_org_name %}
+Università della Calabria
+{% endblock header_center_org_name %}
+
+<!-- Organization description in Header -->
+{% block header_center_org_subname %}
+Il Campus per eccellenza
+{% endblock header_center_org_subname %}
+
+<!-- Logo in Footer -->
+{% block footer_logo %}
+<img class="icon" src="{% static 'images/logo_white.png' %}" />
+{% endblock footer_logo %}
+
+<!-- Organization name in Footer -->
+{% block footer_org_name %}
+Università della Calabria
+{% endblock footer_org_name %}
+
+<!-- Organization name in Footer -->
+{% block footer_org_subname %}
+Il Campus per eccellenza
+{% endblock footer_org_subname %}
+```
+
+
+Galleria
+--------
+![Home](data/gallery/default.png)
+_**Frontend**: Schermata di default del template_
