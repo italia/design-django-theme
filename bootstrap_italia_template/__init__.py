@@ -1,0 +1,1 @@
+default_app_config = 'bootstrap_italia_template.apps.BootstrapItaliaTemplateConfig'

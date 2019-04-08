@@ -1,5 +1,5 @@
 import os
-from setuptools import find_packages, setup
+from setuptools import setup, find_packages
 
 with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
     README = readme.read()
@@ -10,10 +10,11 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='django-bootstrap-italia',
     version='0.1',
-    packages=find_packages(),
+    packages=['bootstrap_italia_template',],
+    package_data = {'bootstrap_italia_template': ['bootstrap_italia_template/*']},
     include_package_data=True,
     license='BSD License',
-    description="AGID Bootstrap Italia template for Django",
+    description="Bootstrap Italia template for Django",
     long_description=README,
     url='https://github.com/francesco-filicetti/django-bootstrap-italia',
     author='Francesco Filicetti',
@@ -30,4 +31,7 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
+    install_requires=[
+        'django>=2.0',
+    ]
 )
