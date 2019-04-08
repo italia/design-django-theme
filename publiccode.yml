@@ -3,7 +3,7 @@
 # More info at https://github.com/italia/publiccode.yml
 
 publiccodeYmlVersion: '0.2'
-name: Django Bootstrap Italia AGID template
+name: Django Bootstrap Italia template
 releaseDate: '2019-02-12'
 url: 'https://github.com/francesco-filicetti/django-bootstrap-italia'
 applicationSuite: Django Framework
@@ -26,7 +26,7 @@ maintenance:
       email: francesco.filicetti@unical.it
       affiliation: unical.it
 legal:
-  license: AGPL-3.0-only
+  license: BSD-3-Clause
   repoOwner: Università della Calabria
   authorsFile: AUTHORS
 localisation:
@@ -40,12 +40,12 @@ description:
   it:
     shortDescription: >-
       Libreria per il framework Python Django fornisce lo schema di default del
-      template Bootstrap Italia conforme alle linee guida definite da AGID.
+      template Bootstrap Italia conforme alle Linee guida di design per i servizi
+      web della Pubblica Amministrazione.
     genericName: Template Django Bootstrap Italia
     longDescription: >
       Il tema Bootstrap Italia è lo strumento Bootstrap 4 per lo sviluppo di
-      applicazioni web per la PA sviluppato da AGID (Agenzia per l'Italia
-      Digitale).
+      applicazioni web per la Pubblica Amministrazione.
 
 
       [https://italia.github.io/bootstrap-italia/](https://italia.github.io/bootstrap-italia/)
@@ -54,11 +54,12 @@ description:
       Questa libreria per il framework Python Django fornisce lo schema di
       default del template, opportunamente diviso in blocchi di cui poter fare
       l'overload, al fine di dotare il proprio progetto di una interfaccia
-      grafica che rispetti le linee guida dettate dall'AGID.
+      grafica che rispetti le Linee guida di design per i servizi web della
+      Pubblica Amministrazione.
     documentation: 'https://github.com/francesco-filicetti/django-bootstrap-italia'
     features:
       - Integrazione in Django Framework
       - >-
-        Conforme alle linee guida AGID per lo sviluppo di applicazioni web per
-        la PA
+        Conforme alle Linee guida di design per i servizi web della Pubblica
+        Amministrazione
       - Modulare

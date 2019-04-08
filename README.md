@@ -1,23 +1,16 @@
-AGID Bootstrap Italia template for Django
+Bootstrap Italia template for Django
 -----------------------------------------
 
-Completamente open-source, costruita sulle fondamenta di [Bootstrap 4.2.1](https://getbootstrap.com/),
+Completamente open-source, costruita sulle fondamenta di [Bootstrap Italia v1.0.1](https://italia.github.io/bootstrap-italia/),
 di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità,
-personalizzandole secondo le [Linee Guida di Design per i siti web della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/),
+secondo le [Linee Guida di Design per i siti web della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/).
 **Bootstrap Italia** usa i pattern e i componenti definiti nello [UI Kit](https://designers.italia.it/kit/ui-kit/)
-di Designers Italia e li trasforma in codice già pronto all'uso!
-
-https://italia.github.io/bootstrap-italia/
-
-Il tema Bootstrap Italia è lo strumento Bootstrap 4 per lo sviluppo di
-applicazioni web per la PA sviluppato da AGID (Agenzia per l'Italia Digitale).
-
-https://italia.github.io/bootstrap-italia/
+di Designers Italia e li trasforma in codice già pronto all'uso.
 
 Questa libreria per il framework Python Django fornisce lo schema di default
 del template, opportunamente diviso in blocchi di cui poter fare l'overload,
 al fine di dotare il proprio progetto di una interfaccia grafica che rispetti
-le linee guida dettate dall'AGID.
+le Linee guida di design per i servizi web della Pubblica Amministrazione.
 
 [QUI](https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/)
 è possibile prendere visione del codice sorgente per l'implementazione di tutti
@@ -29,7 +22,7 @@ Installazione
 ```
 pip install django-bootstrap-italia
 ```
-- In settings.py INSTALLED_APPS inserire *agid_template*.
+- In settings.py INSTALLED_APPS inserire *bootstrap_italia_template*.
 
 
 Utilizzo
@@ -91,7 +84,8 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | **{% block header_center_search_word %}** | Testo "Cerca"   |
 | **{% block header_center_search_icon %}** | Icona tasto "Cerca"   |
 | **{% block main_menu %}** | Menu principale in Header  |
-| **{% block container %}** | Contenuto della pagina   |
+| **{% block container %}** | Contenuto della pagina, senza padding e margin   |
+| **{% block centered_container %}** | Contenuto della pagina, centrato, con margin e padding settati   |
 | **{% block footer %}** | Area footer   |
 | **{% block footer_top_section %}** | Striscia top in Footer   |
 | **{% block footer_logo %}** | Logo Footer  |

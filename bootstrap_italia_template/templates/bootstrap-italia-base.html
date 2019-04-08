@@ -290,7 +290,13 @@
 
         <!-- Container - Body of page-->
         <div class="main-body">
-            {% block container %}{% endblock container %}
+            {% block container %}
+            <div class="container">
+                <div class="col-12 py-md-5 bd-content">
+                    {% block centered_container %}{% endblock %}
+                </div>
+            </div>
+            {% endblock container %}
         </div>
 
         <!-- Footer -->
@@ -299,35 +305,35 @@
             <div class="it-footer-main">
                 <div class="container">
                     {% block footer_top_section %}
-                        <section>
-                            <div class="row clearfix">
-                                <div class="col-sm-12">
-                                    <div class="it-brand-wrapper">
-                                        <a href="{% block footer_logo_url %}#{% endblock footer_logo_url %}">
-                                            {% block footer_logo %}
-                                            <svg class="icon">
-                                                <use xlink:href="{% static 'images/svg/sprite.svg' %}#it-code-circle"></use>
-                                            </svg>
-                                            {% endblock footer_logo %}
-                                            {% block footer_org_text %}
-                                            <div class="it-brand-text">
-                                                <h2 class="no_toc">
-                                                    {% block footer_org_name %}
-                                                    Lorem Ipsum
-                                                    {% endblock footer_org_name %}
-                                                </h2>
-                                                <h3 class="no_toc d-none d-md-block">
-                                                    {% block footer_org_subname %}
-                                                    Lorem Ipsum sit amet
-                                                    {% endblock footer_org_subname %}
-                                                </h3>
-                                            </div>
-                                            {% endblock footer_org_text %}
-                                        </a>
-                                    </div>
+                    <section>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="it-brand-wrapper">
+                                    <a href="{% block footer_logo_url %}#{% endblock footer_logo_url %}">
+                                        {% block footer_logo %}
+                                        <svg class="icon">
+                                            <use xlink:href="{% static 'images/svg/sprite.svg' %}#it-code-circle"></use>
+                                        </svg>
+                                        {% endblock footer_logo %}
+                                        {% block footer_org_text %}
+                                        <div class="it-brand-text">
+                                            <h2 class="no_toc">
+                                                {% block footer_org_name %}
+                                                Lorem Ipsum
+                                                {% endblock footer_org_name %}
+                                            </h2>
+                                            <h3 class="no_toc d-none d-md-block">
+                                                {% block footer_org_subname %}
+                                                Lorem Ipsum sit amet
+                                                {% endblock footer_org_subname %}
+                                            </h3>
+                                        </div>
+                                        {% endblock footer_org_text %}
+                                    </a>
                                 </div>
                             </div>
-                        </section>
+                        </div>
+                    </section>
                     {% endblock footer_top_section %}
 
                     <!-- Footer middle section with menu blocks -->
