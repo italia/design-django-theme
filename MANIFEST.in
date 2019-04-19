@@ -1,5 +1,3 @@
-include README.md
-include AUTHORS
-include LICENSE
 include bootstrap_italia_template/templates/bootstrap-italia-base.html
+include bootstrap_italia_template/static/*
 include data/gallery/default.png
