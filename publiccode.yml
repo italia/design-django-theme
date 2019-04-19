@@ -5,9 +5,9 @@
 publiccodeYmlVersion: '0.2'
 name: Django Bootstrap Italia template
 releaseDate: '2019-02-12'
-url: 'https://github.com/francesco-filicetti/django-bootstrap-italia'
+url: 'https://github.com/italia/design-django-theme'
 applicationSuite: Django Framework
-landingURL: 'https://github.com/francesco-filicetti/django-bootstrap-italia'
+landingURL: 'https://github.com/italia/design-django-theme'
 softwareVersion: '0.1'
 developmentStatus: stable
 softwareType: library
@@ -56,7 +56,7 @@ description:
       l'overload, al fine di dotare il proprio progetto di una interfaccia
       grafica che rispetti le Linee guida di design per i servizi web della
       Pubblica Amministrazione.
-    documentation: 'https://github.com/francesco-filicetti/django-bootstrap-italia'
+    documentation: 'https://github.com/italia/design-django-theme'
     features:
       - Integrazione in Django Framework
       - >-
