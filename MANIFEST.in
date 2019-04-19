@@ -1,3 +1,6 @@
 include bootstrap_italia_template/templates/bootstrap-italia-base.html
-include bootstrap_italia_template/static/*
-include data/gallery/default.png
+include bootstrap_italia_template/static/css/bootstrap-italia.min.css
+include bootstrap_italia_template/static/css/bootstrap-italia.min.css.map
+include bootstrap_italia_template/static/images/svg/*.svg
+include bootstrap_italia_template/static/js/bootstrap-italia.bundle.min.js
+include bootstrap_italia_template/static/js/bootstrap-italia.min.js
