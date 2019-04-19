@@ -8,7 +8,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-bootstrap-italia',
+    name='design-django-theme',
     version='0.1',
     packages=['bootstrap_italia_template',],
     package_data = {'bootstrap_italia_template': ['bootstrap_italia_template/*']},
@@ -16,7 +16,7 @@ setup(
     license='BSD License',
     description="Bootstrap Italia template for Django",
     long_description=README,
-    url='https://github.com/francesco-filicetti/django-bootstrap-italia',
+    url='https://github.com/italia/design-django-theme',
     author='Francesco Filicetti',
     author_email='francesco.filicetti@unical.it',
     classifiers=[
