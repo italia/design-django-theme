@@ -289,7 +289,7 @@
             </div>
         </div>
         {% endblock header_wrapper %}
-        
+
         <!-- Container - Body of page-->
         <div class="main-body">
             {% block container %}
@@ -510,6 +510,7 @@
         {% endblock footer %}
 
         {% block bottom_scripts %}
+        <script>window.__PUBLIC_PATH__ = "{% static 'fonts' %}"</script>
         <script src="{% static 'js/bootstrap-italia.bundle.min.js' %}"></script>
         {% endblock bottom_scripts %}
     </body>

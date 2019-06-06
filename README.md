@@ -1,11 +1,11 @@
 [![Join the #design-cms-themes channel](https://img.shields.io/badge/Slack%20channel-%23design--cms--themes-blue.svg?logo=slack)](https://developersitalia.slack.com/messages/C91K0K085)
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
-[![Design on forum.italia.it](https://img.shields.io/badge/Forum-Design-blue.svg)](https://forum.italia.it/c/design/user-interface) 
+[![Design on forum.italia.it](https://img.shields.io/badge/Forum-Design-blue.svg)](https://forum.italia.it/c/design/user-interface)
 
 Bootstrap Italia template for Django
 -----------------------------------------
 
-Completamente open-source, costruita sulle fondamenta di [Bootstrap Italia v1.0.1](https://italia.github.io/bootstrap-italia/),
+Completamente open-source, costruita sulle fondamenta di [Bootstrap Italia v1.2.11](https://italia.github.io/bootstrap-italia/),
 di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità,
 secondo le [Linee Guida di Design per i siti web della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/).
 **Bootstrap Italia** usa i pattern e i componenti definiti nello [UI Kit](https://designers.italia.it/kit/ui-kit/)
