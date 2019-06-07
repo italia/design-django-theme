@@ -1,3 +1,6 @@
+include AUTHORS
+include LICENSE
+include README.md
 include bootstrap_italia_template/static/assets/*.svg
 include bootstrap_italia_template/static/css/bootstrap-italia.min.css
 include bootstrap_italia_template/static/css/bootstrap-italia.min.css.map
