@@ -89,6 +89,8 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | **{% block header_center_search_word %}** | Testo "Cerca"   |
 | **{% block header_center_search_icon %}** | Icona tasto "Cerca"   |
 | **{% block main_menu %}** | Menu principale in Header  |
+| **{% block messages %}** | Messaggi di sistema   |
+| **{% block centered_messages %}** | Messaggi di sistema, centrati, con margin e padding settati   |
 | **{% block container %}** | Contenuto della pagina, senza padding e margin   |
 | **{% block centered_container %}** | Contenuto della pagina, centrato, con margin e padding settati   |
 | **{% block footer %}** | Area footer   |
@@ -105,7 +107,8 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | **{% block footer_contacts_section %}** | Sezione contatti in Footer   |
 | **{% block footer_bottom %}** | Striscia bottom in Footer   |
 | **{% block footer_bottom_content %}** | Contenuto striscia bottom in Footer   |
-| **{% block bottom_scripts %}** | Extra javascript a fine pagina   |
+| **{% block bottom_scripts %}** | Javascripts   |
+| **{% block extra_scripts %}** | Javascript aggiuntivi a fine pagina   |
 
 
 Esempio di base.html
