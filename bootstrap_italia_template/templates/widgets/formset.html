@@ -1,0 +1,53 @@
+{% load i18n %}
+{% load static %}
+
+<div id="formset-template-{{ formset_id }}" style="display:none;" generic_id="{{ template_generic_id }}">
+    <div class="form-container">
+        <div class="row form-row spacer">
+            <div class="col">
+                <div class="input-group">
+                    <div class="table-responsive">
+                        <table class="table table-bordered formset-table">
+                            {{ formset_template }}
+                        </table>
+                    </div>
+                </div>
+                <button class="btn btn-danger remove-form-row mb-4" id="remove-{{ formset_id }}-{{ template_generic_id }}">
+                    <svg class="icon icon-xs icon-white">
+                        <use xlink:href="/static/images/svg/sprite.svg#it-arrow-up-circle"></use>
+                    </svg> {% trans "Rimuovi inserimento" %}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{{ formset.management_form }}
+{% for form in formset %}
+<div class="form-container">
+    <div class="row form-row spacer">
+        <div class="col">
+            <div class="input-group">
+                <div class="table-responsive">
+                    <table class="table table-bordered formset-table">
+                        {{form}}
+                    </table>
+                </div>
+            </div>
+            <button class="btn btn-danger remove-form-row mb-4" id="remove-{{ formset_id }}-0">
+                <svg class="icon icon-xs icon-white">
+                    <use xlink:href="/static/images/svg/sprite.svg#it-arrow-up-circle"></use>
+                </svg> {% trans "Rimuovi inserimento" %}
+            </button>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<div class="input-group-append">
+    <button id="add-form-{{ formset_id }}" class="btn float-left btn-success add-form-row">
+        <svg class="icon icon-xs icon-white">
+            <use xlink:href="{% static 'images/svg/sprite.svg' %}#it-plus-circle"></use>
+        </svg>
+        {% trans "Aggiungi inserimento" %}
+    </button>
+</div>

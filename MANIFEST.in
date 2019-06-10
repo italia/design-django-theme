@@ -12,3 +12,4 @@ include bootstrap_italia_template/static/js/bootstrap-italia.bundle.min.js
 include bootstrap_italia_template/static/js/bootstrap-italia.min.js
 include bootstrap_italia_template/static/svg/sprite.svg
 include bootstrap_italia_template/templates/bootstrap-italia-base.html
+include bootstrap_italia_template/templates/widgets/*
