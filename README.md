@@ -183,8 +183,28 @@ Il Campus per eccellenza
 {% endblock footer_org_subname %}
 ```
 
+Widget per i form fields di Django
+-----------------------------------
+
+Definiti i widget [Django widgets](https://docs.djangoproject.com/en/2.2/ref/forms/widgets/),
+per l'adeguamento grafico dei form alle linee guida di **Boostrap Italia**.
+
+![Radio Box](data/gallery/widget_radio.png)
+_**Radio box field**_
+
+![Select Box](data/gallery/widget_select.png)
+_**Select box field**_
+
+![Date Field](data/gallery/widget_date.png)
+_**Date field**_
+
+
+![Formset Field](data/gallery/widget_formset.png)
+_**Formset field**: [formset documentation](https://docs.djangoproject.com/en/2.2/topics/forms/formsets/)_
+
 
 Galleria
 --------
+
 ![Home](data/gallery/default.png)
 _**Frontend**: Schermata di default del template_
