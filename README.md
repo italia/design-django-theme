@@ -189,18 +189,21 @@ Widget per i form fields di Django
 Definiti i widget [Django widgets](https://docs.djangoproject.com/en/2.2/ref/forms/widgets/),
 per l'adeguamento grafico dei form alle linee guida di **Boostrap Italia**.
 
+Per l'utilizzo dei [Django Formset](https://docs.djangoproject.com/en/2.2/topics/forms/formsets/)
+è necessario caricare il file javascript ```formset_js.js``` presente in static/js.
+
 ![Radio Box](data/gallery/widget_radio.png)
-_**Radio box field**_
+_Radio box field_
 
 ![Select Box](data/gallery/widget_select.png)
-_**Select box field**_
+_Select box field_
 
 ![Date Field](data/gallery/widget_date.png)
-_**Date field**_
+_Date field_
 
 
 ![Formset Field](data/gallery/widget_formset.png)
-_**Formset field**: [formset documentation](https://docs.djangoproject.com/en/2.2/topics/forms/formsets/)_
+_Formset field_
 
 
 Galleria
