@@ -54,7 +54,7 @@ function reindex_forms(parent_div, prefix){
  * @param  {String} prefix: the Django formset prefix
  * @param  {String} container_class_div: the class of div that contains the form
  */
-function deleteForm(to_remove, prefix, conainer_class_div) {
+function deleteForm(to_remove, prefix, container_class_div) {
     // calculate the number of total forms in formset
     total = $('#id_' + prefix + '-TOTAL_FORMS').val();
     // retrieve all the forms following the one I'm deleting
@@ -93,7 +93,7 @@ $(document).on('click', '.remove-form-row', function(e){
     // If this method is called, the default action of the event will not be triggered.
     e.preventDefault();
     // get the CSS class of element that contains form and button
-    var container_class = '.form-container'
+    var container_class = '.form-container';
     // get formset prefix
     var prefix = $(this).attr('id').split('-')[1];
     // get the element to remove (contains the form and the "remove" button)
