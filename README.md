@@ -89,6 +89,7 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | **{% block header_center_search_word %}** | Testo "Cerca"   |
 | **{% block header_center_search_icon %}** | Icona tasto "Cerca"   |
 | **{% block main_menu %}** | Menu principale in Header  |
+| **{% block menu_links %}** | Voci del menu principale |
 | **{% block messages %}** | Messaggi di sistema   |
 | **{% block centered_messages %}** | Messaggi di sistema, centrati, con margin e padding settati   |
 | **{% block container %}** | Contenuto della pagina, senza padding e margin   |

@@ -203,6 +203,7 @@
                                         </div>
                                         <div class="menu-wrapper">
                                             <ul class="navbar-nav">
+                                                {% block menu_links %}
                                                 <li class="nav-item active"><a class="nav-link active" href="#"><span>link 1 attivo</span><span class="sr-only">current</span></a></li>
                                                 <li class="nav-item"><a class="nav-link" href="#"><span>link 2</span></a></li>
                                                 <li class="nav-item"><a class="nav-link disabled" href="#"><span>link 3 disabilitato</span></a></li>
@@ -276,6 +277,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
+                                                {% endblock menu_links %}
                                             </ul>
                                         </div>
                                     </div>
