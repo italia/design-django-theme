@@ -1,0 +1,11 @@
+.focus--keyboard {
+  border-color: $orange;
+  box-shadow: 0 0 6px 2px $orange;
+  outline: none;
+}
+
+.focus--mouse {
+  border-color: inherit;
+  box-shadow: none;
+  outline: none;
+}
