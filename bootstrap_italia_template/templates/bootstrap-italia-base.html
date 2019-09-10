@@ -299,8 +299,11 @@
                 <div class="col-12 pt-md-5 pt-lg-5 pt-4 bd-content">
                     {% block centered_messages %}
                     {% for message in messages %}
-                    <div class="mb-0 alert alert-{{ message.tags }}{% if 'error' in message.tags%} alert-danger{% endif %}" role="alert">{{ message|safe }}</div>
-                    {% endfor %}
+                        <div class="mb-0 alert alert-{{ message.tags }}
+                                   {% if 'error' in message.tags%} alert-danger{% endif %}
+                                   {% if not forloop.first %}mt-1{% endif %}"
+                                   role="alert">{{ message|safe }}</div>
+                        {% endfor %}
                     {% endblock centered_messages %}
                 </div>
             </div>
