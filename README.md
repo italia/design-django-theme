@@ -187,11 +187,8 @@ Il Campus per eccellenza
 Widget per i form fields di Django
 -----------------------------------
 
-Definiti i widget [Django widgets](https://docs.djangoproject.com/en/2.2/ref/forms/widgets/),
+Definiti i [Django widgets](https://docs.djangoproject.com/en/2.2/ref/forms/widgets/)
 per l'adeguamento grafico dei form alle linee guida di **Boostrap Italia**.
-
-Per l'utilizzo dei [Django Formset](https://docs.djangoproject.com/en/2.2/topics/forms/formsets/)
-è necessario caricare il file javascript ```formset_js.js``` presente in static/js.
 
 ![Radio Box](data/gallery/widget_radio.png)
 _Radio box field_
@@ -202,6 +199,12 @@ _Select box field_
 ![Date Field](data/gallery/widget_date.png)
 _Date field_
 
+Per l'utilizzo dei [Django Formset](https://docs.djangoproject.com/en/2.2/topics/forms/formsets/)
+si consiglia l'utilizzo nel proprio progetto della libreria
+[django-form-builder](https://github.com/UniversitaDellaCalabria/django-form-builder.git)
+dell'[Università della Calabria](https://github.com/UniversitaDellaCalabria).
+
+Viene fornito a tale scopo un widget ad-hoc.
 
 ![Formset Field](data/gallery/widget_formset.png)
 _Formset field_
