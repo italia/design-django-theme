@@ -9,29 +9,32 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='design-django-theme',
-    version='0.1',
+    version='v1.3.9-3',
     packages=['bootstrap_italia_template',],
     package_data = {'bootstrap_italia_template': ['bootstrap_italia_template/*']},
     include_package_data=True,
     license='BSD License',
     description="Bootstrap Italia template for Django",
     long_description=README,
+    long_description_content_type='text/markdown',
     url='https://github.com/italia/design-django-theme',
     author='Francesco Filicetti',
     author_email='francesco.filicetti@unical.it',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: 2.1',
+        'Framework :: Django :: 2.0',
+        'Framework :: Django :: 3.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     install_requires=[
-        'django>=2.0',
+        'django>2.9',
+        'libsass>=0.19.4',
+        'django-sass-processor>=0.8',
+        'django_compressor>=2.4',
     ]
 )
