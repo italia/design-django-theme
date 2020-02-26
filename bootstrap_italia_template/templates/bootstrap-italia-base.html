@@ -13,7 +13,11 @@
         <!-- CSS -->
         <link rel="stylesheet" href="{% static 'css/bootstrap-italia.min.css' %}">
         <!-- Extra CSS/Javascript -->
-        {% block extra_head %}{% endblock extra_head %}
+        {% block extra_head %}
+        <link rel="icon" href="{% static 'images/favicon.ico' %}">
+        <link rel="icon" href="{% static 'images/favicon-32x32.png' %}" sizes="32x32" type="image/png">
+        <link rel="icon" href="{% static 'images/favicon-16x16.png' %}" sizes="16x16" type="image/png">
+        {% endblock extra_head %}
     </head>
     <body>
         {% block header_wrapper %}

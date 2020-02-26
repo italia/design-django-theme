@@ -5,7 +5,7 @@
 Bootstrap Italia template for Django
 -----------------------------------------
 
-Completamente open-source, costruita sulle fondamenta di [Bootstrap Italia v1.3.7](https://italia.github.io/bootstrap-italia/),
+Completamente open-source, costruita sulle fondamenta di [Bootstrap Italia v1.3.9](https://italia.github.io/bootstrap-italia/),
 di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità,
 secondo le [Linee Guida di Design per i siti web della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/).
 **Bootstrap Italia** usa i pattern e i componenti definiti nello [UI Kit](https://designers.italia.it/kit/ui-kit/)
