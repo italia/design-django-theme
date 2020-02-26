@@ -2,6 +2,7 @@
 *~
 *__pycache__
 */.~lock*
-/dist/
-/django_bootstrap_italia.egg-info/
+dist/
+build/
+*.egg-info/
 MANIFEST.in

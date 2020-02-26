@@ -24,7 +24,7 @@ Installazione
 -------------
 
 ```
-pip install git+https://github.com/italia/design-django-theme
+pip install design-django-theme
 ```
 - In settings.py INSTALLED_APPS inserire *bootstrap_italia_template*.
 
