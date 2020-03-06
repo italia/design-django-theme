@@ -32,7 +32,7 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     install_requires=[
-        'django>2.9',
+        'django>=2.2.11',
         'libsass>=0.19.4',
         'django-sass-processor>=0.8',
         'django_compressor>=2.4',
