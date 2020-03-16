@@ -1,6 +1,6 @@
 <div class="bootstrap-select-wrapper">
     <div class="form-group input-group">
-        <select name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+        <select name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %} data-live-search="true" data-live-search-placeholder="Cerca...">
             {% for group_name, group_choices, group_index in widget.optgroups %}
                 {% if group_name %}
                     <optgroup label="{{ group_name }}">
