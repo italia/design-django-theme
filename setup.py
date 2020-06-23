@@ -7,12 +7,13 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
-# python3 setup.py sdist
-# python3 -m twine upload
+#  rm -R build/ dist/ *egg-info
+#  python3 setup.py sdist
+#  twine upload dist/*
 
 setup(
     name='design-django-theme',
-    version='v1.4.0',
+    version='v1.4.1',
     packages=['bootstrap_italia_template',],
     package_data = {'bootstrap_italia_template': ['bootstrap_italia_template/*']},
     include_package_data=True,
