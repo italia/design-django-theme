@@ -37,7 +37,7 @@ python manage.py collectstatic
 ```
 
 - Nel template del progetto, creare un file ```base.html``` (scegliere il nome
-preferito) ed eseguire l'*extends* del file ```boostrap-italia-base.html```. Questa
+preferito) ed eseguire l'*extends* del file ```bootstrap-italia-base.html```. Questa
 sarà la base grafica (il file è concepito quasi come un file di configurazione),
 comune a tutte (o quasi) le pagine del sistema;
 - In ```base.html``` eseguire l'overload dei blocchi, al fine di personalizzare
