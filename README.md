@@ -46,6 +46,13 @@ le sezioni di interesse (es. il nome dell'Ente/Organizzazione, il logo, ecc...);
 l'overload del blocco ```{% container %}```, ereditando, cosi, le impostazioni
 di ```<header>``` e  ```<footer>``` opportunamente personalizzate.
 
+Formato data nel datepicker
+---------------------------
+
+Per personalizzare il formato della data utilizzato nel widget datepicker (calendario) 
+dei form, effettuare l'override del parametro ```JS_DEFAULT_DATE_FORMAT``` nel 
+file ```settings``` del progetto. 
+Il valore di default è "dd/MM/yyyy".
 
 Stile e CSS/SCSS
 ----------------
