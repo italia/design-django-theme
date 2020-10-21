@@ -11,3 +11,4 @@ include bootstrap_italia_template/static/js/*
 include bootstrap_italia_template/static/svg/sprite.svg
 include bootstrap_italia_template/templates/*
 include bootstrap_italia_template/templates/widgets/*
+include bootstrap_italia_template/templatetags/*

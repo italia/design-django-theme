@@ -1,5 +1,7 @@
-<!DOCTYPE html>
+{% load django_bootstrap_italia_tags %}
 {% load static %}
+
+<!DOCTYPE html>
 <html lang="it">
     <head>
         <!-- Required meta tags -->
@@ -537,6 +539,16 @@
         {% block bottom_scripts %}
         <script>window.__PUBLIC_PATH__ = "{% static 'fonts' %}"</script>
         <script src="{% static 'js/bootstrap-italia.bundle.min.js' %}"></script>
+        <script>
+        <!-- Placed here to take customizable settings value -->
+        {% default_js_date_value as default_js_date_value %}
+        $(document).ready(function() {
+            $('.it-date-datepicker').datepicker({
+                inputFormat: ["{{ default_js_date_value }}"],
+                outputFormat: "{{ default_js_date_value }}",
+            });
+        });
+        </script>
         {% endblock bottom_scripts %}
         {% block extra_scripts %}{% endblock extra_scripts %}
     </body>
