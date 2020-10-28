@@ -1,4 +1,5 @@
 {% load django_bootstrap_italia_tags %}
+{% load i18n %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -89,7 +90,7 @@
 
                                     {% block header_slim_buttons %}
                                     <div class="it-access-top-wrapper">
-                                        <button class="btn btn-primary btn-sm" href="#" type="button">Accedi</button>
+                                        <button class="btn btn-primary btn-sm" href="#" type="button">{% trans "Accedi" %}</button>
                                     </div>
                                     {% endblock header_slim_buttons %}
                                 </div>
@@ -173,7 +174,7 @@
                                             </span>
                                             {% endblock header_center_search_text %}
 
-                                            <a class="search-link rounded-icon" href="{% block header_center_search_url %}#{% endblock header_center_search_url %}" aria-label="Cerca">
+                                            <a class="search-link rounded-icon" href="{% block header_center_search_url %}#{% endblock header_center_search_url %}" aria-label="{% trans 'Cerca' %}">
                                                 {% block header_center_search_icon %}
                                                 <svg class="icon">
                                                     <use xlink:href="{% static 'svg/sprite.svg' %}#it-search"></use>
