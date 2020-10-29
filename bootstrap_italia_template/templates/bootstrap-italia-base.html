@@ -33,11 +33,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="it-header-slim-wrapper-content">
+                                {% block header_slim_top_left %}
                                 <a class="d-none d-lg-block navbar-brand" href="{% block header_slim_org_url %}#{% endblock header_slim_org_url %}">
                                     {% block header_slim_org_name %}
                                     Nome Ente/Organizzazione
                                     {% endblock header_slim_org_name %}
                                 </a>
+                                {% endblock header_slim_top_left %}
                                 <div class="nav-mobile">
                                     <nav>
                                         <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
