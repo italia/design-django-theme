@@ -14,6 +14,10 @@
         <meta name="description" content="{% block page_meta_description %}Bootstrap Italia{% endblock page_meta_description %}">
         <!-- CSS -->
         <link rel="stylesheet" href="{% static 'css/bootstrap-italia.min.css' %}">
+        <!-- Fonts -->
+        <script>window.__PUBLIC_PATH__ = "{% static 'fonts' %}"</script>
+        <!-- Javascript -->
+        <script src="{% static 'js/bootstrap-italia.bundle.min.js' %}"></script>
         <!-- Extra CSS/Javascript -->
         {% block extra_head %}
         <link rel="icon" href="{% static 'images/favicon.ico' %}">
@@ -537,8 +541,6 @@
         {% endblock footer %}
 
         {% block bottom_scripts %}
-        <script>window.__PUBLIC_PATH__ = "{% static 'fonts' %}"</script>
-        <script src="{% static 'js/bootstrap-italia.bundle.min.js' %}"></script>
         <script>
         <!-- Placed here to take customizable settings value -->
         {% default_js_date_value as default_js_date_value %}
