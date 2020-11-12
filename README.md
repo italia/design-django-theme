@@ -46,6 +46,13 @@ le sezioni di interesse (es. il nome dell'Ente/Organizzazione, il logo, ecc...);
 l'overload del blocco ```{% container %}```, ereditando, cosi, le impostazioni
 di ```<header>``` e  ```<footer>``` opportunamente personalizzate.
 
+Formato data nel datepicker
+---------------------------
+
+Per personalizzare il formato della data utilizzato nel widget datepicker (calendario)
+dei form, effettuare l'override del parametro ```JS_DEFAULT_DATE_FORMAT``` nel
+file ```settings``` del progetto.
+Il valore di default è "dd/MM/yyyy".
 
 Stile e CSS/SCSS
 ----------------
@@ -72,6 +79,7 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | **{% block extra_head %}** | Extra CSS o Javascript   |
 | **{% block header_wrapper %}** | Intero blocco Header   |
 | **{% block header_slim_wrapper %}** | Striscia top in Header   |
+| **{% block header_slim_top_left %}** | Striscia top left che avvolge header_slim_org_name  |
 | **{% block header_slim_org_name %}** | Nome organizzazione in Header top   |
 | **{% block header_slim_mobile_org_name %}** | Nome organizzazione in Header top (mobile)   |
 | **{% block header_mobile_arrow %}** | Icona freccia sub-menu in Header top (mobile)   |
