@@ -79,6 +79,7 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | **{% block extra_head %}** | Extra CSS o Javascript   |
 | **{% block header_wrapper %}** | Intero blocco Header   |
 | **{% block header_slim_wrapper %}** | Striscia top in Header   |
+| **{% block header_center_wrapper_columns %}** | Classe per definizione colonne in griglia in "it-header-center-wrapper"   |
 | **{% block header_slim_top_left %}** | Striscia top left che avvolge header_slim_org_name  |
 | **{% block header_slim_org_name %}** | Nome organizzazione in Header top   |
 | **{% block header_slim_mobile_org_name %}** | Nome organizzazione in Header top (mobile)   |
