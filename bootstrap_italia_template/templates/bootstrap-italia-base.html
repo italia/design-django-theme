@@ -115,6 +115,7 @@
                             <div class="col-12">
                                 <div class="it-header-center-content-wrapper">
                                     <!-- Logo -->
+                                    {% block header_brand_wrapper %}
                                     <div class="it-brand-wrapper">
                                         <a href="{% block header_center_url %}#{% endblock header_center_url %}">
                                             {% block header_center_logo %}
@@ -137,6 +138,7 @@
                                             </div>
                                         </a>
                                     </div>
+                                    {% endblock header_brand_wrapper %}
 
                                     <!-- Social and Search -->
                                     {% block header_center_right_zone %}
