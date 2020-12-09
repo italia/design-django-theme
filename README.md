@@ -75,7 +75,9 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | Block                                 | Descrizione           |
 | --------------------------------------|---------------------|
 | **{% block page_title %}**            | Tag <title> della pagina   |
-| **{% block page_meta_description %}**            | tag <meta-description> della pagina   |
+| **{% block page_meta_description %}** | tag <meta-description> della pagina   |
+| **{% block page_meta_keywords %}**    | tag <meta-keywords> della pagina   |
+| **{% block page_meta_robots %}**    | tag <meta-robots> della pagina   |
 | **{% block extra_head %}** | Extra CSS o Javascript   |
 | **{% block header_wrapper %}** | Intero blocco Header   |
 | **{% block header_slim_wrapper %}** | Striscia top in Header   |
