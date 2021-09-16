@@ -8,7 +8,7 @@ releaseDate: '2021-02-10'
 url: 'https://github.com/italia/design-django-theme'
 applicationSuite: Django Framework
 landingURL: 'https://github.com/italia/design-django-theme'
-softwareVersion: '1.4.5'
+softwareVersion: '1.4.6'
 developmentStatus: stable
 softwareType: library
 roadmap: 'https://pypi.org/manage/project/django-bootstrap-italia/releases/'
