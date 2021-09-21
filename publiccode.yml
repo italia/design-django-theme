@@ -4,11 +4,11 @@
 
 publiccodeYmlVersion: '0.2'
 name: Django Bootstrap Italia template
-releaseDate: '2021-02-10'
+releaseDate: '2021-09-21'
 url: 'https://github.com/italia/design-django-theme'
 applicationSuite: Django Framework
 landingURL: 'https://github.com/italia/design-django-theme'
-softwareVersion: '1.4.6'
+softwareVersion: '1.4.7'
 developmentStatus: stable
 softwareType: library
 roadmap: 'https://pypi.org/manage/project/django-bootstrap-italia/releases/'
