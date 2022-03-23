@@ -16,12 +16,13 @@
         <meta name="keywords" content="{% block page_meta_keywords %}Bootstrap Italia{% endblock page_meta_keywords %}">
         <meta name="robots" content="{% block page_meta_robots %}all{% endblock page_meta_robots %}" />
         <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/vendor/owl.carousel.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/bootstrap-italia.min.css' %}">
         <!-- Fonts -->
         <script>window.__PUBLIC_PATH__ = "{% static 'fonts' %}"</script>
         <!-- Javascript -->
         <script src="{% static 'js/bootstrap-italia.bundle.min.js' %}"></script>
-        <!-- Extra CSS/Javascript -->
+        <script src="{% static 'js/vendor/owl.carousel.min.js' %}"></script>
         {% block extra_head %}
         <link rel="icon" href="{% static 'images/favicon.ico' %}">
         <link rel="icon" href="{% static 'images/favicon-32x32.png' %}" sizes="32x32" type="image/png">
@@ -551,6 +552,7 @@
         {% endblock footer %}
 
         {% block bottom_scripts %}
+        <!-- Extra CSS/Javascript -->
         <script>
         <!-- Placed here to take customizable settings value -->
         {% default_js_date_value as default_js_date_value %}

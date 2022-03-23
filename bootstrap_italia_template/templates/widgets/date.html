@@ -1,5 +1,4 @@
 <div class="it-datepicker-wrapper">
-    <div class="form-group">
 <!--
     <input class="form-control it-date-datepicker"
            id="{}" name="{}" type="text" value="{}">
@@ -7,12 +6,11 @@
         Inserisci la data in formato aaaa-mm-gg (es: 2019-12-31)
     </small>
 -->
-        <input type="{{ widget.type }}"
-               name="{{ widget.name }}"
-               class="form-control it-date-datepicker"
-               {% if widget.value != None %}
-               value="{{ widget.value|stringformat:'s' }}"
-               {% endif %}
-               {% include "django/forms/widgets/attrs.html" %}>
-    </div>
+    <input type="{{ widget.type }}"
+           name="{{ widget.name }}"
+           class="form-control it-date-datepicker"
+           {% if widget.value != None %}
+           value="{{ widget.value|stringformat:'s' }}"
+           {% endif %}
+           {% include "django/forms/widgets/attrs.html" %}>
 </div>
