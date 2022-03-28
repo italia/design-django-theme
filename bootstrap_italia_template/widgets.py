@@ -4,6 +4,9 @@ from django.utils.translation import gettext as _
 
 class BootstrapItaliaDateWidget(DateInput):
     template_name = 'widgets/date.html'
+    def __init__(self,  *attrs, **kwargs):
+        super().__init__(*attrs, **kwargs)
+        self.format = '%Y-%m-%d'
 
 
 class BootstrapItaliaRadioWidget(RadioSelect):
