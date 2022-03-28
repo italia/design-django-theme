@@ -1,4 +1,3 @@
-{% load django_bootstrap_italia_tags %}
 {% load i18n %}
 {% load static %}
 
@@ -551,19 +550,7 @@
         </footer>
         {% endblock footer %}
 
-        {% block bottom_scripts %}
-        <!-- Extra CSS/Javascript -->
-        <script>
-        <!-- Placed here to take customizable settings value -->
-        {% default_js_date_value as default_js_date_value %}
-        $(document).ready(function() {
-            $('.it-date-datepicker').datepicker({
-                inputFormat: ["{{ default_js_date_value }}"],
-                outputFormat: "{{ default_js_date_value }}",
-            });
-        });
-        </script>
-        {% endblock bottom_scripts %}
+        {% block bottom_scripts %}{% endblock bottom_scripts %}
         {% block extra_scripts %}{% endblock extra_scripts %}
     </body>
 </html>
