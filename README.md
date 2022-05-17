@@ -92,6 +92,7 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 | **{% block header_slim_sub_menu %}** | Sub-menu area di destra in Header top   |
 | **{% block header_slim_buttons %}** | Button area di destra in Header top   |
 | **{% block header_brand_wrapper %}** | Wrapper div del logo   |
+| **{% block header_brand_text %}** | Wrapper div del testo del logo   |
 | **{% block header_center_logo %}** | Header logo principale  |
 | **{% block header_center_org_name %}** | Nome organizzazione principale in Header   |
 | **{% block header_center_org_subname %}** | Descrizione organizzazione in Header   |
