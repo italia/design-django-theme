@@ -6,7 +6,7 @@
 Bootstrap Italia template for Django
 -----------------------------------------
 
-Completamente open-source, costruita sulle fondamenta di [Bootstrap Italia v1.5.1](https://italia.github.io/bootstrap-italia/),
+Completamente open-source, costruita sulle fondamenta di [Bootstrap Italia v1.6.2](https://italia.github.io/bootstrap-italia/),
 di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità,
 secondo le [Linee Guida di Design per i siti web della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/).
 **Bootstrap Italia** usa i pattern e i componenti definiti nello [UI Kit](https://designers.italia.it/kit/ui-kit/)
@@ -67,6 +67,14 @@ Può essere utile [django-sass-processor](https://pypi.org/project/django-sass-p
 Una volta installate le librerie, sarà possibile integrare fogli di stile *.scss*
 e importarli nelle proprie pagine effettuando l'overload del blocco ```{% extra_head %}```.
 
+CDN vs local
+------------
+
+E' possibile recuperare i file statici (css, js, svg) da una CDN.
+Nel ```settings.py``` del proprio progetto basta customizzare i seguenti parametri:
+
+- ```DJANGO_BOOSTRAP_ITALIA_USE_CDN``` (default **False**);
+- ```DJANGO_BOOSTRAP_ITALIA_CDN``` (default **https://cdn.jsdelivr.net/npm/bootstrap-italia@1.6.2/dist**);
 
 Descrizione dei blocchi
 -----------------------

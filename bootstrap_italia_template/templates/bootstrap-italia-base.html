@@ -1,3 +1,4 @@
+{% load django_bootstrap_italia %}
 {% load i18n %}
 {% load static %}
 
@@ -15,13 +16,13 @@
         <meta name="keywords" content="{% block page_meta_keywords %}Bootstrap Italia{% endblock page_meta_keywords %}">
         <meta name="robots" content="{% block page_meta_robots %}all{% endblock page_meta_robots %}" />
         <!-- CSS -->
-        <link rel="stylesheet" href="{% static 'css/vendor/owl.carousel.min.css' %}">
-        <link rel="stylesheet" href="{% static 'css/bootstrap-italia.min.css' %}">
+        <link rel="stylesheet" href="{% django_bootstrap_italia_static_path 'css/vendor/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% django_bootstrap_italia_static_path 'css/bootstrap-italia.min.css' %}">
         <!-- Fonts -->
-        <script>window.__PUBLIC_PATH__ = "{% static 'fonts' %}"</script>
+        <script>window.__PUBLIC_PATH__ = "{% django_bootstrap_italia_static_path 'fonts' %}"</script>
         <!-- Javascript -->
-        <script src="{% static 'js/bootstrap-italia.bundle.min.js' %}"></script>
-        <script src="{% static 'js/vendor/owl.carousel.min.js' %}"></script>
+        <script src="{% django_bootstrap_italia_static_path 'js/bootstrap-italia.bundle.min.js' %}"></script>
+        <script src="{% django_bootstrap_italia_static_path 'js/vendor/owl.carousel.min.js' %}"></script>
         {% block extra_head %}
         <link rel="icon" href="{% static 'images/favicon.ico' %}">
         <link rel="icon" href="{% static 'images/favicon-32x32.png' %}" sizes="32x32" type="image/png">
@@ -56,7 +57,7 @@
                                             </span>
                                             {% block header_mobile_arrow %}
                                             <svg class="icon">
-                                                <use xlink:href="{% static 'svg/sprite.svg' %}#it-expand"></use>
+                                                <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-expand"></use>
                                             </svg>
                                             {% endblock header_mobile_arrow %}
                                         </a>
@@ -78,7 +79,7 @@
                                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                                             <span>ITA</span>
                                             <svg class="icon d-none d-lg-block">
-                                                <use xlink:href="{% static 'svg/sprite.svg' %}#it-expand"></use>
+                                                <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-expand"></use>
                                             </svg>
                                         </a>
                                         <div class="dropdown-menu">
@@ -122,7 +123,7 @@
                                         <a href="{% block header_center_url %}#{% endblock header_center_url %}">
                                             {% block header_center_logo %}
                                             <svg class="icon">
-                                                <use xlink:href="{% static 'svg/sprite.svg' %}#it-code-circle"></use>
+                                                <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-code-circle"></use>
                                             </svg>
                                             {% endblock header_center_logo %}
 
@@ -154,21 +155,21 @@
                                                 <li>
                                                     <a href="#" aria-label="Facebook" target="_blank">
                                                         <svg class="icon">
-                                                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-facebook"></use>
+                                                            <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-facebook"></use>
                                                         </svg>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#" aria-label="Github" target="_blank">
                                                         <svg class="icon">
-                                                        <use xlink:href="{% static 'svg/sprite.svg' %}#it-github"></use>
+                                                        <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-github"></use>
                                                         </svg>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#" target="_blank" aria-label="Twitter">
                                                         <svg class="icon">
-                                                        <use xlink:href="{% static 'svg/sprite.svg' %}#it-twitter"></use>
+                                                        <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-twitter"></use>
                                                         </svg>
                                                     </a>
                                                 </li>
@@ -189,7 +190,7 @@
                                             <a class="search-link rounded-icon" href="{% block header_center_search_url %}#{% endblock header_center_search_url %}" aria-label="{% trans 'Cerca' %}">
                                                 {% block header_center_search_icon %}
                                                 <svg class="icon">
-                                                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-search"></use>
+                                                    <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-search"></use>
                                                 </svg>
                                                 {% endblock header_center_search_icon %}
                                             </a>
@@ -212,7 +213,7 @@
                                 <nav class="navbar navbar-expand-lg has-megamenu">
                                     <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
                                         <svg class="icon">
-                                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-burger"></use>
+                                            <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-burger"></use>
                                         </svg>
                                     </button>
                                     <div class="navbar-collapsable" id="nav10">
@@ -230,7 +231,7 @@
                                                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                                                         <span>Esempio di Dropdown</span>
                                                         <svg class="icon icon-xs">
-                                                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-expand"></use>
+                                                            <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-expand"></use>
                                                         </svg>
                                                     </a>
                                                     <div class="dropdown-menu">
@@ -252,7 +253,7 @@
                                                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                                                         <span>Esempio di Megamenu</span>
                                                         <svg class="icon icon-xs">
-                                                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-expand"></use>
+                                                            <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-expand"></use>
                                                         </svg>
                                                     </a>
                                                     <div class="dropdown-menu">
@@ -357,7 +358,7 @@
                                     <a href="{% block footer_logo_url %}#{% endblock footer_logo_url %}">
                                         {% block footer_logo %}
                                         <svg class="icon">
-                                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-code-circle"></use>
+                                            <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-code-circle"></use>
                                         </svg>
                                         {% endblock footer_logo %}
                                         {% block footer_org_text %}
@@ -483,28 +484,28 @@
                                         <li class="list-inline-item">
                                             <a class="p-2 text-white" href="#" target="_blank">
                                                 <svg class="icon icon-sm icon-white align-top">
-                                                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-designers-italia"></use>
+                                                    <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-designers-italia"></use>
                                                 </svg><span class="sr-only">Designers Italia</span>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <a class="p-2 text-white" href="#" target="_blank">
                                                 <svg class="icon icon-sm icon-white align-top">
-                                                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-twitter"></use>
+                                                    <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-twitter"></use>
                                                 </svg><span class="sr-only">Twitter</span>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <a class="p-2 text-white" href="#" target="_blank">
                                                 <svg class="icon icon-sm icon-white align-top">
-                                                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-medium"></use>
+                                                    <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-medium"></use>
                                                 </svg><span class="sr-only">Medium</span>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <a class="p-2 text-white" href="#" target="_blank">
                                                 <svg class="icon icon-sm icon-white align-top">
-                                                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-behance"></use>
+                                                    <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprite.svg' %}#it-behance"></use>
                                                 </svg><span class="sr-only">Behance</span>
                                             </a>
                                         </li>
