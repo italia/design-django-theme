@@ -13,7 +13,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='design-django-theme',
-    version='v1.6.0.3',
+    version='v1.6.2',
     packages=['bootstrap_italia_template',],
     package_data = {'bootstrap_italia_template': ['bootstrap_italia_template/*']},
     include_package_data=True,
@@ -38,8 +38,8 @@ setup(
     ],
     install_requires=[
         'django',
-        'libsass>=0.19.4',
-        'django-sass-processor>=0.8',
-        'django_compressor>=2.4',
+        'libsass',
+        'django-sass-processor',
+        'django_compressor',
     ]
 )
