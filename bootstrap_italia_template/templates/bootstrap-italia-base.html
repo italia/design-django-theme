@@ -22,8 +22,6 @@
         <link rel="stylesheet" href="{% django_bootstrap_italia_static_path 'css/bootstrap-italia.min.css' %}">
         <!-- Fonts -->
         <script>window.__PUBLIC_PATH__ = "{% django_bootstrap_italia_static_path 'fonts' %}"</script>
-        <!-- Javascript -->
-        <script src="{% django_bootstrap_italia_static_path 'js/bootstrap-italia.bundle.min.js' %}"></script>
 <!--
         <script src="{% django_bootstrap_italia_static_path 'js/vendor/owl.carousel.min.js' %}"></script>
 -->
@@ -557,6 +555,8 @@
         </footer>
         {% endblock footer %}
 
+        <script src="{% django_bootstrap_italia_static_path 'js/bootstrap-italia.bundle.min.js' %}"></script>
+        
         {% block bottom_scripts %}{% endblock bottom_scripts %}
         {% block extra_scripts %}{% endblock extra_scripts %}
     </body>
