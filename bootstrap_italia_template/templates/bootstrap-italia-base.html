@@ -77,14 +77,14 @@
                                 <div class="header-slim-right-zone">
 
                                     {% block header_slim_sub_menu %}
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="nav-item dropdown">                      
+                                        <a class="nav-link btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdown-lang" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                 
                                             <span>ITA</span>
                                             <svg class="icon d-none d-lg-block">
                                                 <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprites.svg' %}#it-expand"></use>
                                             </svg>
                                         </a>
-                                        <div class="dropdown-menu">
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-lang">
                                             <div class="row">
                                                 <div class="col-12">
                                                     <div class="link-list-wrapper">
@@ -230,23 +230,23 @@
                                                 <li class="nav-item"><a class="nav-link" href="#"><span>link 2</span></a></li>
                                                 <li class="nav-item"><a class="nav-link disabled" href="#"><span>link 3 disabilitato</span></a></li>
                                                 <li class="nav-item dropdown">
-                                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    <a class="nav-link btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdown-example" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <span>Esempio di Dropdown</span>
                                                         <svg class="icon icon-xs">
                                                             <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprites.svg' %}#it-expand"></use>
                                                         </svg>
                                                     </a>
-                                                    <div class="dropdown-menu">
+                                                    <div class="dropdown-menu"  aria-labelledby="dropdown-example">
                                                         <div class="link-list-wrapper">
                                                             <ul class="link-list">
                                                                 <li>
                                                                     <h3 class="no_toc" id="heading">Heading</h3>
                                                                 </li>
-                                                                <li><a class="list-item" href="#"><span>Link list 1</span></a></li>
-                                                                <li><a class="list-item" href="#"><span>Link list 2</span></a></li>
-                                                                <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
+                                                                <li><a class="list-item dropdown-item" href="#"><span>Link list 1</span></a></li>
+                                                                <li><a class="list-item dropdown-item" href="#"><span>Link list 2</span></a></li>
+                                                                <li><a class="list-item dropdown-item" href="#"><span>Link list 3</span></a></li>
                                                                 <li><span class="divider"></span></li>
-                                                                <li><a class="list-item" href="#"><span>Link list 4</span></a></li>
+                                                                <li><a class="list-item dropdown-item" href="#"><span>Link list 4</span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -266,9 +266,9 @@
                                                                         <li>
                                                                             <h3 class="no_toc">Heading 1</h3>
                                                                         </li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 1 </span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 2 </span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 3 </span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -278,9 +278,9 @@
                                                                         <li>
                                                                             <h3 class="no_toc">Heading 2</h3>
                                                                         </li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 1 </span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 2 </span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 3 </span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -290,9 +290,9 @@
                                                                         <li>
                                                                             <h3 class="no_toc">Heading 3</h3>
                                                                         </li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                                                                        <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 1 </span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 2 </span></a></li>
+                                                                        <li><a class="list-item dropdown-item" href="#"><span>Link list 3</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
