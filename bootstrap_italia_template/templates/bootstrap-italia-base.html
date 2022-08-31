@@ -77,8 +77,8 @@
                                 <div class="header-slim-right-zone">
 
                                     {% block header_slim_sub_menu %}
-                                    <div class="nav-item dropdown">                      
-                                        <a class="nav-link btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdown-lang" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                 
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdown-lang" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <span>ITA</span>
                                             <svg class="icon d-none d-lg-block">
                                                 <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprites.svg' %}#it-expand"></use>
@@ -252,13 +252,13 @@
                                                     </div>
                                                 </li>
                                                 <li class="nav-item dropdown megamenu">
-                                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu1">
                                                         <span>Esempio di Megamenu</span>
                                                         <svg class="icon icon-xs">
                                                             <use xlink:href="{% django_bootstrap_italia_static_path 'svg/sprites.svg' %}#it-expand"></use>
                                                         </svg>
                                                     </a>
-                                                    <div class="dropdown-menu">
+                                                    <div class="dropdown-menu" role="region" aria-labelledby="megamenu1">
                                                         <div class="row">
                                                             <div class="col-12 col-lg-4">
                                                                 <div class="link-list-wrapper">
@@ -556,7 +556,7 @@
         {% endblock footer %}
 
         <script src="{% django_bootstrap_italia_static_path 'js/bootstrap-italia.bundle.min.js' %}"></script>
-        
+
         {% block bottom_scripts %}{% endblock bottom_scripts %}
         {% block extra_scripts %}{% endblock extra_scripts %}
     </body>
