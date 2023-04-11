@@ -558,6 +558,9 @@
         {% endblock footer %}
 
         <script src="{% django_bootstrap_italia_static_path 'js/bootstrap-italia.bundle.min.js' %}"></script>
+        <script>
+            bootstrap.loadFonts('/bootstrap-italia/dist/fonts');
+        </script>
 
         {% block bottom_scripts %}{% endblock bottom_scripts %}
         {% block extra_scripts %}{% endblock extra_scripts %}
