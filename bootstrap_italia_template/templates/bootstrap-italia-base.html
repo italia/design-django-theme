@@ -213,7 +213,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <nav class="navbar navbar-expand-lg has-megamenu">
-                                    <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+                                    <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10" data-bs-toggle="navbarcollapsible" data-bs-target="#nav10">
                                         <svg class="icon">
                                             <use xlink:href="{% static 'svg/sprites.svg' %}#it-burger"></use>
                                         </svg>
@@ -221,7 +221,11 @@
                                     <div class="navbar-collapsable" id="nav10">
                                         <div class="overlay"></div>
                                         <div class="close-div sr-only">
-                                            <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+                                            <button class="btn close-menu" type="button">
+                                                <svg class="icon">
+                                                    <use xlink:href="{% static 'svg/sprites.svg' %}#it-close-big"></use>
+                                                </svg>
+                                            </button>
                                         </div>
                                         <div class="menu-wrapper">
                                             <ul class="navbar-nav">
