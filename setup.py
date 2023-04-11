@@ -38,8 +38,5 @@ setup(
     ],
     install_requires=[
         'django',
-        'libsass',
-        'django-sass-processor',
-        'django_compressor',
     ]
 )

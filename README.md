@@ -74,7 +74,7 @@ E' possibile recuperare i file statici (css, js, svg) da una CDN.
 Nel ```settings.py``` del proprio progetto basta customizzare i seguenti parametri:
 
 - ```DJANGO_BOOSTRAP_ITALIA_USE_CDN``` (default **False**);
-- ```DJANGO_BOOSTRAP_ITALIA_CDN``` (default **https://cdn.jsdelivr.net/npm/bootstrap-italia@1.6.4/dist**);
+- ```DJANGO_BOOSTRAP_ITALIA_CDN``` (default **https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.6/dist**);
 
 Descrizione dei blocchi
 -----------------------
@@ -209,8 +209,8 @@ Il Campus per eccellenza
 Widget per i form fields di Django
 -----------------------------------
 
-Definiti i [Django widgets](https://docs.djangoproject.com/en/2.2/ref/forms/widgets/)
-per l'adeguamento grafico dei form alle linee guida di **Boostrap Italia**.
+Definiti i [Django widgets](https://docs.djangoproject.com/en/4.2/ref/forms/widgets/)
+per l'adeguamento grafico dei form alle linee guida di **Bootstrap Italia**.
 
 ![Radio Box](data/gallery/widget_radio.png)
 _Radio box field_
@@ -221,7 +221,7 @@ _Select box field_
 ![Date Field](data/gallery/widget_date.png)
 _Date field_
 
-Per l'utilizzo dei [Django Formset](https://docs.djangoproject.com/en/2.2/topics/forms/formsets/)
+Per l'utilizzo dei [Django Formset](https://docs.djangoproject.com/en/4.2/topics/forms/formsets/)
 si consiglia l'utilizzo nel proprio progetto della libreria
 [django-form-builder](https://github.com/UniversitaDellaCalabria/django-form-builder.git)
 dell'[Università della Calabria](https://github.com/UniversitaDellaCalabria).
