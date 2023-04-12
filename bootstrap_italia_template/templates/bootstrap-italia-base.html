@@ -218,7 +218,7 @@
                                     </button>
                                     <div class="navbar-collapsable" id="nav10">
                                         <div class="overlay"></div>
-                                        <div class="close-div sr-only">
+                                        <div class="close-div visually-hidden">
                                             <button class="btn close-menu" type="button">
                                                 <svg class="icon">
                                                     <use xlink:href="{% static 'svg/sprites.svg' %}#it-close-big"></use>
@@ -228,7 +228,7 @@
                                         <div class="menu-wrapper">
                                             <ul class="navbar-nav">
                                                 {% block menu_links %}
-                                                <li class="nav-item active"><a class="nav-link active" href="#"><span>link 1 attivo</span><span class="sr-only">current</span></a></li>
+                                                <li class="nav-item active"><a class="nav-link active" href="#"><span>link 1 attivo</span><span class="visually-hidden">current</span></a></li>
                                                 <li class="nav-item"><a class="nav-link" href="#"><span>link 2</span></a></li>
                                                 <li class="nav-item"><a class="nav-link disabled" href="#"><span>link 3 disabilitato</span></a></li>
                                                 <li class="nav-item dropdown">
@@ -489,28 +489,28 @@
                                             <a class="p-2 text-white" href="#" target="_blank">
                                                 <svg class="icon icon-sm icon-white align-top">
                                                     <use xlink:href="{% static 'svg/sprites.svg' %}#it-designers-italia"></use>
-                                                </svg><span class="sr-only">Designers Italia</span>
+                                                </svg><span class="visually-hidden">Designers Italia</span>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <a class="p-2 text-white" href="#" target="_blank">
                                                 <svg class="icon icon-sm icon-white align-top">
                                                     <use xlink:href="{% static 'svg/sprites.svg' %}#it-twitter"></use>
-                                                </svg><span class="sr-only">Twitter</span>
+                                                </svg><span class="visually-hidden">Twitter</span>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <a class="p-2 text-white" href="#" target="_blank">
                                                 <svg class="icon icon-sm icon-white align-top">
                                                     <use xlink:href="{% static 'svg/sprites.svg' %}#it-medium"></use>
-                                                </svg><span class="sr-only">Medium</span>
+                                                </svg><span class="visually-hidden">Medium</span>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <a class="p-2 text-white" href="#" target="_blank">
                                                 <svg class="icon icon-sm icon-white align-top">
                                                     <use xlink:href="{% static 'svg/sprites.svg' %}#it-behance"></use>
-                                                </svg><span class="sr-only">Behance</span>
+                                                </svg><span class="visually-hidden">Behance</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -543,7 +543,7 @@
             <div class="it-footer-small-prints clearfix">
                 <div class="container">
                     {% block footer_bottom_content %}
-                    <h3 class="sr-only">Sezione Link Utili</h3>
+                    <h3 class="visually-hidden">Sezione Link Utili</h3>
                     <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
                         <li class="list-inline-item"><a href="#" title="Note Legali">Media policy</a></li>
                         <li class="list-inline-item"><a href="#" title="Note Legali">Note legali</a></li>
