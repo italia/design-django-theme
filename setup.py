@@ -13,11 +13,11 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='design-django-theme',
-    version='v2.4.2',
+    version='v2.6.2',
     packages=['bootstrap_italia_template', ],
     package_data={'bootstrap_italia_template': ['bootstrap_italia_template/*']},
     include_package_data=True,
-    license='Apache 2.0',
+    license='3-clause BSD',
     description="Bootstrap Italia template for Django",
     long_description=README,
     long_description_content_type='text/markdown',
