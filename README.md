@@ -73,8 +73,8 @@ CDN vs local
 E' possibile recuperare i file statici (css, js, svg) da una CDN.
 Nel ```settings.py``` del proprio progetto basta customizzare i seguenti parametri:
 
-- ```DJANGO_BOOSTRAP_ITALIA_USE_CDN``` (default **False**);
-- ```DJANGO_BOOSTRAP_ITALIA_CDN``` (default **https://cdn.jsdelivr.net/npm/bootstrap-italia@2.6.2/dist**);
+- ```DJANGO_BOOTSTRAP_ITALIA_USE_CDN``` (default **False**);
+- ```DJANGO_BOOTSTRAP_ITALIA_CDN``` (default **https://cdn.jsdelivr.net/npm/bootstrap-italia@2.6.2/dist**);
 
 Descrizione dei blocchi
 -----------------------
