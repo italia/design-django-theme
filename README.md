@@ -83,6 +83,7 @@ I blocchi sono elencati in ordine di "apparizione" nel file ```bootstrap-italia-
 
 | Block                                 | Descrizione           |
 | --------------------------------------|---------------------|
+| **{% block bootstrap_italia_loader %}** | Script di Bootstrap Italia (se si sceglie di non includere il bundle)  |
 | **{% block page_title %}**            | Tag <title> della pagina   |
 | **{% block page_meta_description %}** | tag <meta-description> della pagina   |
 | **{% block page_meta_keywords %}**    | tag <meta-keywords> della pagina   |
