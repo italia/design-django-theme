@@ -13,7 +13,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='design-django-theme',
-    version='v2.12.0',
+    version='v2.13.4',
     packages=['bootstrap_italia_template', ],
     package_data={'bootstrap_italia_template': ['bootstrap_italia_template/*']},
     include_package_data=True,
@@ -30,6 +30,7 @@ setup(
         'Framework :: Django :: 2.0',
         'Framework :: Django :: 3.0',
         'Framework :: Django :: 4.0',
+        'Framework :: Django :: 5.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
