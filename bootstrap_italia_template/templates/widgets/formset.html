@@ -34,7 +34,7 @@
                     </table>
                 </div>
             </div>
-            <button class="btn btn-danger btn-xs remove-form-row mb-4" id="remove-{{ formset_id }}-0">
+            <button class="btn btn-danger btn-xs remove-form-row mb-4" id="remove-{{ formset_id }}-{{ forloop.counter0 }}">
                 <svg class="icon icon-xs icon-white">
                     <use xlink:href="{% static 'svg/sprites.svg' %}#it-arrow-up-circle"></use>
                 </svg> {% trans "Rimuovi inserimento" %}
