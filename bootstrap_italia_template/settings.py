@@ -3,4 +3,4 @@ JS_DEFAULT_DATE_FORMAT = "dd/MM/yyyy"
 
 # CDN FOR STATICS
 DJANGO_BOOTSTRAP_ITALIA_USE_CDN = False
-DJANGO_BOOTSTRAP_ITALIA_CDN = 'https://cdn.jsdelivr.net/npm/bootstrap-italia@2.17.3/dist'
+DJANGO_BOOTSTRAP_ITALIA_CDN = 'https://cdn.jsdelivr.net/npm/bootstrap-italia@2.18.1/dist'
