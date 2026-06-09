@@ -17,7 +17,7 @@ setup(
     packages=['bootstrap_italia_template', ],
     package_data={'bootstrap_italia_template': ['bootstrap_italia_template/*']},
     include_package_data=True,
-    license='3-clause BSD',
+    license='BSD-3-Clause',
     description="Bootstrap Italia template for Django",
     long_description=README,
     long_description_content_type='text/markdown',
