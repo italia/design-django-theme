@@ -1,0 +1,64 @@
+# This repository adheres to the publiccode.yml standard by including this
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.5'
+name: Design Django Theme
+releaseDate: '2026-04-21'
+url: 'https://github.com/italia/design-django-theme'
+applicationSuite: Django Framework
+landingURL: 'https://github.com/italia/design-django-theme'
+softwareVersion: '2.18.1'
+developmentStatus: stable
+softwareType: library
+roadmap: 'https://github.com/italia/design-django-theme/issues'
+platforms:
+  - web
+  - linux
+usedBy:
+  - 'https://www.unical.it'
+categories:
+  - website-builder
+maintenance:
+  type: community
+  contacts:
+    - name: Francesco Filicetti
+      email: francesco.filicetti@unical.it
+      affiliation: unical.it
+legal:
+  license: BSD-3-Clause
+  mainCopyrightOwner: Università della Calabria
+localisation:
+  availableLanguages:
+    - it
+    - en
+  localisationReady: true
+IT:
+  countryExtensionVersion: '0.2'
+organisation:
+  uri: 'urn:x-italian-pa:unical'
+description:
+  it:
+    shortDescription: >-
+      Template Bootstrap Italia per Django, conforme alle Linee guida di
+      design per i servizi web della PA.
+    longDescription: >
+      Il tema Bootstrap Italia è lo strumento Bootstrap 5 per lo sviluppo di
+      applicazioni web per la Pubblica Amministrazione.
+
+
+      [https://italia.github.io/bootstrap-italia/](https://italia.github.io/bootstrap-italia/)
+
+
+      Questa libreria per il framework Python Django fornisce lo schema di
+      default del template, opportunamente diviso in blocchi di cui poter fare
+      l'overload, al fine di dotare il proprio progetto di una interfaccia
+      grafica che rispetti le Linee guida di design per i servizi web della
+      Pubblica Amministrazione.
+    documentation: 'https://github.com/italia/design-django-theme'
+    features:
+      - Integrazione in Django Framework
+      - >-
+        Conforme alle Linee guida di design per i servizi web della Pubblica
+        Amministrazione
+      - Modulare
